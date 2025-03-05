@@ -65,7 +65,7 @@ function pointerPrototype () {
     this.prevTexcoordY = 0;
     this.deltaX = 0;
     this.deltaY = 0;
-    this.down = false;
+    this.down = true;
     this.moved = false;
     this.color = [30, 0, 300];
 }
@@ -1498,7 +1498,7 @@ window.addEventListener('keydown', e => {
 
 function updatePointerDownData (pointer, id, posX, posY) {
     pointer.id = id;
-    pointer.down = true;
+    //pointer.down = true;
     pointer.moved = false;
     pointer.texcoordX = posX / canvas.width;
     pointer.texcoordY = 1.0 - posY / canvas.height;
@@ -1520,7 +1520,7 @@ function updatePointerMoveData (pointer, posX, posY) {
 }
 
 function updatePointerUpData (pointer) {
-    pointer.down = false;
+    //pointer.down = false;
 }
 
 function correctDeltaX (delta) {
