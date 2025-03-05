@@ -1506,7 +1506,7 @@ function updatePointerDownData (pointer, id, posX, posY) {
     pointer.prevTexcoordY = pointer.texcoordY;
     pointer.deltaX = 0;
     pointer.deltaY = 0;
-    pointer.color = #ff00ff;
+    pointer.color = generateColor();
 }
 
 function updatePointerMoveData (pointer, posX, posY) {
