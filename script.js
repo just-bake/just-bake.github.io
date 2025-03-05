@@ -1536,11 +1536,7 @@ function correctDeltaY (delta) {
 }
 
 function generateColor () {
-    let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-    c.r *= 0.15;
-    c.g *= 0.15;
-    c.b *= 0.15;
-    return c;
+    return { r: 1.0, g: 0.75, b: 0.80 }; // Pink color in RGB
 }
 
 function HSVtoRGB (h, s, v) {
