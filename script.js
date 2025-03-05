@@ -1536,7 +1536,7 @@ function correctDeltaY (delta) {
 }
 
 function generateColor () {
-    return { r: 1.0, g: 0.75, b: 0.80 }; // Pink color in RGB
+    return { r: 1.0, g: 0.75, b: 0.80, a: 0.50 }; // Pink color in RGB
 }
 
 function HSVtoRGB (h, s, v) {
